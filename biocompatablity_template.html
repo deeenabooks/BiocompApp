@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Biocompatibility Test Report</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Biocompatibility Test Report</h1>
+    <p>User Name: {{ user_name }}</p>
+    <p>Implant Name: {{ implant_name }}</p>
+
+    <h2>Test Results</h2>
+    <!-- Add test results here -->
+    {% for result_type, result_tests in results %}
+    <h3>{{ result_type }}</h3>
+    <table>
+        <tr>
+            <th>Test</th>
+            <th>Description</th>
+        </tr>
+        {% for test_name, test_description in result_tests.items() %}
+        <tr>
+            <td>{{ test_name }}</td>
+            <td>{{ test_description }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endfor %}
+
+</body>
+</html>
+

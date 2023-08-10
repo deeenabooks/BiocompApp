@@ -1,0 +1,43 @@
+/* styles.css */
+
+
+QWidget {
+    background-color: #f0f0f0;
+    color: #333333;
+    font-size: 14px;
+    font-family: 'Segoe UI', 'Ariel';
+}
+
+QPushButton {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+}
+
+QPushButton:hover {
+    background-color: #3e8e41;
+}
+
+/* Apply the new style to the "Next" button */
+QPushButton#btnNext {
+    background-color: #0074D9;
+    color: white;
+    font-weight: bold;
+}
+QPushButton {
+    background-color: #0074D9;
+    color: white;
+    font-weight: bold;
+}
+
+QLabel#disclaimerLabel {
+    font-style: italic;
+    font-size: 12px;
+    color: #666666;
+}
